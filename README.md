@@ -1,6 +1,8 @@
 # 📰 ApriNews - Modern Haber Otomasyonu
 
-ApriNews, modern web teknolojileri kullanılarak geliştirilmiş, dinamik içerik yönetimine sahip, mobil uyumlu bir haber platformudur.
+ApriNews, modern web teknolojileri kullanılarak geliştirilmiş, dinamik içerik yönetimine sahip, mobil uyumlu ve SEO dostu bir haber platformudur. 
+
+Staj projesi olarak geliştirilen bu uygulama; Admin/Editör paneli, sürükle-bırak resim yükleme ve gerçek zamanlı içerik yönetimi özelliklerine sahiptir.
 
 ## 🚀 Özellikler
 
@@ -13,30 +15,40 @@ ApriNews, modern web teknolojileri kullanılarak geliştirilmiş, dinamik içeri
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- **Frontend:** Next.js (React), Tailwind CSS, Framer Motion
-- **Backend:** Next.js API Routes
-- **Veritabanı:** MongoDB (Mongoose)
-- **Auth:** JS-Cookie (Oturum Yönetimi)
+| Alan | Teknoloji |
+|---|---|
+| **Frontend** | Next.js (React), Tailwind CSS, Framer Motion |
+| **Backend** | Next.js API Routes |
+| **Veritabanı** | MongoDB (Mongoose) |
+| **Auth** | JS-Cookie (Oturum Yönetimi) |
 
-1. **Repoyu klonlayın:**
-   ```bash
-   git clone [https://github.com/KULLANICI_ADINIZ/aprinews.git](https://github.com/KULLANICI_ADINIZ/aprinews.git)
-   cd aprinews
-Bağımlılıkları yükleyin:
+## 📦 Kurulum ve Çalıştırma
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+### 1. Repoyu Klonlayın
+
+git clone [https://github.com/TheYnsK/ApriNews.git](https://github.com/TheYnsK/ApriNews.git)
+cd aprinews
+
+
+### 2. Bağımlılıkları yükleyin:
 
 npm install
 
-Çevre Değişkenlerini Ayarlayın: Ana dizinde .env.local dosyası oluşturun ve MongoDB bağlantı adresinizi ekleyin:
 
-Plaintext
+### 3. Çevre Değişkenlerini Ayarlayın: Ana dizinde .env.local dosyası oluşturun ve MongoDB bağlantı adresinizi ekleyin:
 
 MONGODB_URI=mongodb+srv://kullanici:sifre@cluster.mongodb.net/ApriNews
 
-Projeyi Başlatın:
+(Not: kullanici ve sifre alanlarını kendi bilgilerinizle doldurmayı unutmayın.)
 
+
+### 4. Projeyi Başlatın:
 
 npm run dev
 Tarayıcıda http://localhost:3000 adresine gidin.
+
 
 👤 Varsayılan Giriş (Admin)
 Kurulum sonrası /api/setup rotasını bir kez çalıştırarak admin kullanıcısı oluşturabilirsiniz.
@@ -44,3 +56,7 @@ Kurulum sonrası /api/setup rotasını bir kez çalıştırarak admin kullanıc�
 Kullanıcı Adı: admin
 
 Şifre: 123 
+
+
+Proje Vercel üzerinde yayındadır ve aktif olarak kullanılabilir:
+👉 **[http://aprinews.vercel.app](http://aprinews.vercel.app)**
